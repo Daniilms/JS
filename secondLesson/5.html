@@ -32,9 +32,9 @@ Infinity делать не нужно, однако, в случае если б
 <script>
   "use strict";
 
-  const arg1 = +prompt();
-  const arg2 = +prompt();
-  const operation = prompt();
+  const arg1 = +prompt('Введите первое число: ');
+  const arg2 = +prompt('Введите второе число: ');
+  const operation = prompt('Выберите действие: ');
 
   /* jsdoc https://jsdoc.app/. */
   function mathOperation(arg1, arg2, operation) {
@@ -52,7 +52,6 @@ Infinity делать не нужно, однако, в случае если б
   function getPlus(a, b) {
     return a + b;
   }
-  console.log(getPlus(5, 6));
 
   /* jsdoc https://jsdoc.app/. */
   function getMinus(a, b) {
@@ -62,19 +61,17 @@ Infinity делать не нужно, однако, в случае если б
       return (b - a);
     }
   }
-  console.log(getMinus(4, 3));
 
   /* jsdoc https://jsdoc.app/. */
   function getMulti(a, b) {
     return(a * b);
   }
-  console.log(getMulti(2, 10));
 
   /* jsdoc https://jsdoc.app/. */
   function getDelete(a, b) {
     return a / b;
   }
-  console.log(getDelete(100, 20));
+
 </script>
 </body>
 </html>
