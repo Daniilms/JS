@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Homework</title>
-</head>
-<body>
-<!--
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework</title>
+  </head>
+  <body>
+    <!--
 Обязательное задание.
 
 Необходимо реализовать четыре функции, каждая функция должна принимать по два
@@ -28,36 +28,55 @@
 
 Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
 -->
-<script>
-  "use strict";
+    <script>
+      "use strict";
 
-  /* jsdoc https://jsdoc.app/. */
-  function getPlus(a, b) {
-    return a + b;
-  }
-  console.log(getPlus(5, 6));
+      /**
+       * Функция складывает два числа
+       * @param {number} a - первое число
+       * @param {number} b - второе число
+       * @return {number} возращает сумму двух чисел
+       */
+      function getPlus(a, b) {
+        return a + b;
+      }
+      console.log(getPlus(5, 6));
 
-  /* jsdoc https://jsdoc.app/. */
-  function getMinus(a, b) {
-    if (a > b) {
-      return a - b;
-    } else {
-      return (b - a);
-    }
-  }
-  console.log(getMinus(4, 3));
+      /**
+       * Функция вычитает два числа
+       * @param {number} a - первое число
+       * @param {number} b - второе число
+       * @return {number} возращает разность двух чисел
+       */
+      function getMinus(a, b) {
+        if (a > b) {
+          return a - b;
+        }
+        return b - a;
+      }
+      console.log(getMinus(4, 3));
 
-  /* jsdoc https://jsdoc.app/. */
-  function getMulti(a, b) {
-    return(a * b);
-  }
-  console.log(getMulti(2, 10));
+      /**
+       * Функция умножает два числа
+       * @param {number} a - первое число
+       * @param {number} b - второе число
+       * @return {number} возращает результат умножения двух чисел
+       */
+      function getMulti(a, b) {
+        return a * b;
+      }
+      console.log(getMulti(2, 10));
 
-  /* jsdoc https://jsdoc.app/. */
-  function getDelete(a, b) {
-    return a / b;
-  }
-  console.log(getDelete(100, 20));
-</script>
-</body>
+      /**
+       * Функция делит два числа
+       * @param {number} a - первое число
+       * @param {number} b - второе число
+       * @return {number} возращает результат частности двух чисел
+       */
+      function getDelete(a, b) {
+        return a / b;
+      }
+      console.log(getDelete(100, 20));
+    </script>
+  </body>
 </html>
